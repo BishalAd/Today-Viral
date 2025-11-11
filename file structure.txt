@@ -1,0 +1,38 @@
+today-viral/
+│
+├── supabase/
+│   ├── migrations/
+│   │    └── create_tables.sql
+│   └── seed.sql
+│
+├── public/
+│   └── logo.png
+│
+├── src/
+│   ├── lib/
+│   │   └── supabaseClient.js
+│   │
+│   ├── app/
+│   │   ├── layout.jsx
+│   │   ├── globals.css
+│   │
+│   │   ├── page.jsx                → Home (all profiles listing)
+│   │   ├── go-viral/
+│   │   │    └── page.jsx           → TikTok/Reels/Short infinite scroll feed
+│   │   ├── create/
+│   │   │    └── page.jsx           → Upload/post page (paste video link)
+│   │   ├── profile/
+│   │        └── page.jsx           → User profile + likes + posts
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── VideoCard.jsx           → Autoplay + like/comment
+│   │   └── Loader.jsx
+│   │
+│   ├── utils/
+│       └── fetchMetadata.js
+│
+├── .env.local                      → Supabase keys
+├── package.json
+├── tailwind.config.js
+└── README.md
